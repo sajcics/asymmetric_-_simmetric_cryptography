@@ -1,0 +1,22 @@
+{
+  "name": "sajcic_stella_node_security_rsa_dsa_sha256",
+  "version": "1.0.0",
+  "description": "create encryption and decryption of text data, create hash method and digital signature",
+  "main": "backend.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stella Sajcic",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "chilkat_node8_arm": "^9.50.70",
+    "chilkat_node8_linux32": "^9.50.70",
+    "chilkat_node8_linux64": "^9.50.70",
+    "chilkat_node8_win32": "^9.50.70",
+    "express": "^4.16.2",
+    "fs": "0.0.1-security",
+    "nodemon": "^1.12.1",
+    "os": "^0.1.1"
+  }
+}

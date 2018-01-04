@@ -1,0 +1,75 @@
+h1 {
+  background: #263238;
+  color: white;
+  padding: 15px;
+}
+
+#author {
+  background: #263238;
+  color: white;
+  padding: 15px;
+}
+
+.whiteBox {
+  background: #CFD8DC;
+  padding: 15px;
+}
+
+.silverBox {
+  background: #009688;
+  padding: 15px;
+}
+
+button {
+  display: block;
+}
+
+textarea {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.silverBox button {
+  border: 2px solid white;
+  padding: 10px;
+  color: white;
+  background: none;
+  box-shadow: none;
+  border-radius: 0px
+}
+
+.silverBox button:hover {
+  border: 2px solid white;
+  padding: 10px;
+  color: white;
+  background: silver;
+  box-shadow: none;
+  border-radius: 0px
+}
+
+.whiteBox button {
+  border: 2px solid black;
+  padding: 10px;
+  color: black;
+  background: none;
+  box-shadow: none;
+  border-radius: 0px
+}
+
+.whiteBox button:hover {
+  border: 2px solid black;
+  padding: 10px;
+  color: black;
+  background: silver;
+  box-shadow: none;
+  border-radius: 0px
+}
+
+.alert {
+  color: red;
+}
+
+#btnGntDigSignChange, #btnGntDigSign {
+  display: inline-block;
+}

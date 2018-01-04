@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="cryptography.js"></script>
+</header>
+
+<body>
+  <h1>Kritiranje a/simetrično</h1>
+
+  <div class="whiteBox">
+    <p>Poruka koju želite kriptirati</p>
+    <textarea rows="10" cols="150" id="textToEcrypt"></textarea>
+    <button type="submit" id="textToEncryptSave">Spremi tekst u datoteku</button>
+    <p id="fileSaved"></p>
+  </div>
+
+
+  <div class="silverBox">
+    <button type="submit" id="btnGntAsimetric">Generiraj asimetrično</button>
+    <p id="asimetricimpossible"></p>
+    <p>Privatni kljuc</p>
+    <textarea rows="10" cols="150" id="asimPrivateKey"></textarea>
+    <p>Javni kljuc</p>
+    <textarea rows="10" cols="150" id="asimPublicKey"></textarea>
+    <p>Kriptirana poruka</p>
+    <textarea rows="10" cols="150" id="asimEncrypt"></textarea>
+    <p>Dekriptirana kriptirana poruka</p>
+    <textarea rows="10" cols="150" id="asimDecrypt"></textarea>
+    <p>Sažetak</p>
+    <textarea rows="10" cols="150" id="hashFromOriginalTextString"></textarea>
+  </div>
+ 
+  <div class="whiteBox">
+    <p>Digitalni potpis</p>
+    <button type="submit" id="btnGntDigSign">Generiraj digitalni potpis</button>
+    <button type="submit" id="btnGntDigSignChange">Spremi izmjenu u digitalnom potpisu</button>
+    <textarea rows="10" cols="150" id="digitalSignatureEncrypted"></textarea>
+    <p id="digitalSignatureSaved"></p>
+
+    <button type="submit" id="btnGntDigSignDecrypt">Dekriptiraj digitalni potpis</button>
+    <textarea rows="10" cols="150" id="digitalSignatureDecrypted"></textarea>
+    <p id="fileIsCorrupted"></p>
+  </div>
+
+  <div class="silverBox">
+    <button type="submit" id="btnGntSimetric">Generiraj simetrično</button>
+    <p id="simetricimpossible"></p>
+    <p>Tajni kljuc</p>
+    <textarea rows="10" cols="150" id="simSecretKey"></textarea>
+    <p>Kriptirana poruka</p>
+    <textarea rows="10" cols="150" id="simEncrypt"></textarea>
+    <p>Dekriptirana kriptirana poruka</p>
+    <textarea rows="10" cols="150" id="simDecrypt"></textarea>
+  </div>
+
+  <p id="author">Made by Stella Sajčić - 2017</p>
+</body>
+
+</html>
