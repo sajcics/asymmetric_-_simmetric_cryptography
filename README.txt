@@ -1,4 +1,17 @@
-HRV:
+English:
+Steps to start project:
+1. install node.js
+2. go to project folder and run: sudo npm install
+3. also run: sudo nodemon backend.js to start script
+4. open index.html
+If textarea is not loaded from file fileToEncrypt.txt then some of the
+steps are not properly done
+
+//NOTE: project is supported for win32, linux64 and linux32
+Details of project see on wiki page.
+
+
+Croatian:
 Koraci za pokretanje programa na linux ubuntu 16.04:
 1. instalirati node.js 8.0.0
 2. otvoriti datoteku projekta i pokrenuti: sudo npm install
@@ -53,17 +66,3 @@ Primjer korištenja:
 
 7. Ukoliko ne postoji jasna poruka spremljena u datoteci tada se ne može izvesti
  niti jedna operacija
-
-
-
-
-ENG:
-Steps to start project:
-1. install node.js
-2. go to project folder and run: sudo npm install
-3. also run: sudo nodemon backend.js to start script
-4. open index.html
-If textarea is not loaded from file fileToEncrypt.txt then some of the
-steps are not properly done
-
-//NOTE: project is supported for win32, linux64 and linux32

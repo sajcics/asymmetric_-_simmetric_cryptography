@@ -8,55 +8,53 @@
 </header>
 
 <body>
-  <h1>Kritiranje a/simetrično</h1>
-
+  <h1>Encrypt asymmetric/symmetric</h1>
   <div class="whiteBox">
-    <p>Poruka koju želite kriptirati</p>
-    <textarea rows="10" cols="150" id="textToEcrypt"></textarea>
-    <button type="submit" id="textToEncryptSave">Spremi tekst u datoteku</button>
+    <p>Message to encrypt</p>
+    <textarea rows="3" cols="100" id="textToEcrypt"></textarea>
+    <button type="submit" id="textToEncryptSave">Save text to file</button>
     <p id="fileSaved"></p>
   </div>
 
 
   <div class="silverBox">
-    <button type="submit" id="btnGntAsimetric">Generiraj asimetrično</button>
+    <button type="submit" id="btnGntAsimetric">Generate asymmetric encryption</button>
     <p id="asimetricimpossible"></p>
-    <p>Privatni kljuc</p>
-    <textarea rows="10" cols="150" id="asimPrivateKey"></textarea>
-    <p>Javni kljuc</p>
-    <textarea rows="10" cols="150" id="asimPublicKey"></textarea>
-    <p>Kriptirana poruka</p>
-    <textarea rows="10" cols="150" id="asimEncrypt"></textarea>
-    <p>Dekriptirana kriptirana poruka</p>
-    <textarea rows="10" cols="150" id="asimDecrypt"></textarea>
-    <p>Sažetak</p>
-    <textarea rows="10" cols="150" id="hashFromOriginalTextString"></textarea>
+    <p>Private key</p>
+    <textarea rows="3" cols="180" id="asimPrivateKey"></textarea>
+    <p>Public key</p>
+    <textarea rows="3" cols="180" id="asimPublicKey"></textarea>
+    <p>Encrypted message</p>
+    <textarea rows="3" cols="180" id="asimEncrypt"></textarea>
+    <p>Decrypted message from encrypted</p>
+    <textarea rows="3" cols="180" id="asimDecrypt"></textarea>
+    <p>Create hash SHA-256</p>
+    <textarea rows="3" cols="180" id="hashFromOriginalTextString"></textarea>
   </div>
- 
+
   <div class="whiteBox">
-    <p>Digitalni potpis</p>
-    <button type="submit" id="btnGntDigSign">Generiraj digitalni potpis</button>
-    <button type="submit" id="btnGntDigSignChange">Spremi izmjenu u digitalnom potpisu</button>
-    <textarea rows="10" cols="150" id="digitalSignatureEncrypted"></textarea>
+    <p>Digital signature</p>
+    <button type="submit" id="btnGntDigSign">Generate digital signature</button>
+    <button type="submit" id="btnGntDigSignChange">Save digital signature with error</button>
+    <textarea rows="3" cols="180" id="digitalSignatureEncrypted"></textarea>
     <p id="digitalSignatureSaved"></p>
 
-    <button type="submit" id="btnGntDigSignDecrypt">Dekriptiraj digitalni potpis</button>
-    <textarea rows="10" cols="150" id="digitalSignatureDecrypted"></textarea>
+    <button type="submit" id="btnGntDigSignDecrypt">Generate digital signature</button>
+    <textarea rows="3" cols="180" id="digitalSignatureDecrypted"></textarea>
     <p id="fileIsCorrupted"></p>
   </div>
 
   <div class="silverBox">
-    <button type="submit" id="btnGntSimetric">Generiraj simetrično</button>
+    <button type="submit" id="btnGntSimetric">Generate symmetric encryption</button>
     <p id="simetricimpossible"></p>
-    <p>Tajni kljuc</p>
-    <textarea rows="10" cols="150" id="simSecretKey"></textarea>
-    <p>Kriptirana poruka</p>
-    <textarea rows="10" cols="150" id="simEncrypt"></textarea>
-    <p>Dekriptirana kriptirana poruka</p>
-    <textarea rows="10" cols="150" id="simDecrypt"></textarea>
+    <p>Secret key</p>
+    <textarea rows="3" cols="180" id="simSecretKey"></textarea>
+    <p>Encrypted message</p>
+    <textarea rows="3" cols="180" id="simEncrypt"></textarea>
+    <p>Decrypted message from encrypted</p>
+    <textarea rows="3" cols="180" id="simDecrypt"></textarea>
   </div>
 
   <p id="author">Made by Stella Sajčić - 2017</p>
 </body>
-
 </html>
